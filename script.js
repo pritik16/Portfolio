@@ -116,4 +116,12 @@
 
     validSections.forEach((section) => sectionObserver.observe(section));
   }
+
+  /* --------------------------------------------------------------------------
+     4. DYNAMIC COPYRIGHT YEAR
+     -------------------------------------------------------------------------- */
+  const yearElement = document.getElementById("year");
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 })();
